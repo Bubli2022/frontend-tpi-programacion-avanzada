@@ -26,7 +26,7 @@ const WeatherApi = () => {
       }
       function error(err) {
          console.error("Geolocation error:", err)
-         // podrías mostrar un mensaje amigable también
+         setGeoError(true)
       }
    }, [])
 
