@@ -29,14 +29,16 @@ Esta es la aplicación **frontend** de la Weather App, desarrollada con **React*
 
 ### 1. Clonar el repositorio y acceder a la carpeta `frontend`:
 
-```bash
+````bash
 git clone <URL_DEL_REPOSITORIO>
 cd frontend
-2. Instalar dependencias:
+
+##2. Instalar dependencias:
 bash
 Copiar código
 npm install
-3. Configurar las variables de entorno:
+
+##3. Configurar las variables de entorno:
 Crear un archivo .env en la raíz del proyecto con el siguiente contenido:
 
 env
@@ -44,45 +46,49 @@ Copiar código
 REACT_APP_API_URL=http://localhost:8000
 Asegurate de que la URL corresponda al backend de FastAPI en ejecución.
 
-Uso
-Para ejecutar la aplicación en modo desarrollo:
+# Uso
+# Para ejecutar la aplicación en modo desarrollo:
 bash
 Copiar código
 npm start
-Esto abrirá automáticamente la app en:
+
+# Esto abrirá automáticamente la app en:
 
 arduino
 Copiar código
 http://localhost:3000
-Funcionalidades
-Solicita permisos de geolocalización para mostrar el clima actual.
 
-Permite buscar el clima por nombre de ciudad.
+# Funcionalidades
+# Solicita permisos de geolocalización para mostrar el clima actual.
 
-Alterna entre unidades de temperatura Celsius y Fahrenheit.
+# Permite buscar el clima por nombre de ciudad.
 
-Muestra:
+# Alterna entre unidades de temperatura Celsius y Fahrenheit.
 
-Icono representativo del clima
+# Muestra:
 
-Temperatura actual
+# Icono representativo del clima
 
-Velocidad del viento
+# Temperatura actual
 
-Porcentaje de nubosidad
+# Velocidad del viento
 
-Presión atmosférica
+# Porcentaje de nubosidad
 
-Notas
-Es obligatorio tener el backend corriendo para obtener los datos climáticos.
+# Presión atmosférica
 
-El backend debe tener una clave de API válida de OpenWeatherMap en su archivo .env.
+# Notas
+# Es obligatorio tener el backend corriendo para obtener los datos climáticos.
 
-Para construir la versión optimizada de producción:
+# El backend debe tener una clave de API válida de OpenWeatherMap en su archivo .env.
+
+# Para construir la versión optimizada de producción:
 
 bash
 Copiar código
 npm run build
-Licencia
-Este proyecto fue desarrollado con fines académicos para la materia Programación Avanzada en la Universidad Nacional Almirante Brown.
-```
+
+# Licencia
+# Este proyecto fue desarrollado con fines académicos para la materia Programación Avanzada en la Universidad Nacional Almirante Brown.
+# ```
+````
