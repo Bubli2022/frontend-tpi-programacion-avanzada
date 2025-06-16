@@ -25,12 +25,33 @@ Esta es la aplicación **frontend** de la Weather App, desarrollada con **React*
 
 ---
 
+Enlaces de weather app del tpi de programación avanzada:
+
+Enlace conectado en linea a través de Netlify del frontend:
+https://tpi-programacion-avanzada.netlify.app/
+
+Tecnologías usadas Frontend: React, Javascript, Axios, CSS/HTML, API personalizada (FastAPI - Python)
+
+Enlace conectado en linea a traves de Render del backend:
+
+https://backend-tpi-programacion-avanzada.onrender.com/docs
+
+Tecnologías usadas Backend: Python, FastAPI, Uvicorn, HTTPX, python-dotenv, OpenWeatherMap API
+
+Repositorios de GitHub:
+
+Frontend:
+https://github.com/Bubli2022/frontend-tpi-programacion-avanzada.git
+
+Backend:
+https://github.com/Bubli2022/backend-tpi-programacion-avanzada.git
+
 ## Instalación
 
 ### 1. Clonar el repositorio y acceder a la carpeta `frontend`:
 
 ````bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/Bubli2022/frontend-tpi-programacion-avanzada.git
 cd frontend
 
 ##2. Instalar dependencias:
