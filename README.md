@@ -35,27 +35,27 @@ cd frontend
 
 ##2. Instalar dependencias:
 bash
-Copiar código
+
 npm install
 
 ##3. Configurar las variables de entorno:
-Crear un archivo .env en la raíz del proyecto con el siguiente contenido:
+# Crear un archivo .env en la raíz del proyecto con el siguiente contenido:
 
 env
-Copiar código
+
 REACT_APP_API_URL=http://localhost:8000
-Asegurate de que la URL corresponda al backend de FastAPI en ejecución.
+# Asegurate de que la URL corresponda al backend de FastAPI en ejecución.
 
 # Uso
 # Para ejecutar la aplicación en modo desarrollo:
 bash
-Copiar código
+
 npm start
 
 # Esto abrirá automáticamente la app en:
 
 arduino
-Copiar código
+
 http://localhost:3000
 
 # Funcionalidades
@@ -85,7 +85,7 @@ http://localhost:3000
 # Para construir la versión optimizada de producción:
 
 bash
-Copiar código
+
 npm run build
 
 # Licencia
