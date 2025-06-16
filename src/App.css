@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+   display: flex;
+   justify-content: center;
+   position: relative;
+   top: 100px;
+   background-image: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   min-height: 80vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: fit-content;
+   padding: 2rem;
+   box-shadow: 2px 2px 8px rgb(0 0 0);
+   margin: 0 auto;
+   border-radius: 8px;
+   background: #ffffffc2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+   padding: 1rem;
+}
+h2 {
+   padding: 5px;
+}
+h3 {
+   padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+   margin: 1.5rem 0 0 0;
+   padding: 10px;
+   border-radius: 10px;
+   background-image: url(https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif);
+   background-position: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div img {
+   width: 100px;
+}
+
+.weather--gif {
+   font-family: sans-serif;
+   text-align: center;
+   margin-top: 15px;
+   font-size: 35px;
+   font-weight: 800;
+   color: transparent;
+   background-image: url(https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif);
+   background-position: center;
+   -webkit-background-clip: text;
+}
+
+.fa-cloud {
+   position: relative;
+   right: 4px;
+}
+
+.fa-temperature-three-quarters {
+   position: relative;
+   right: -1px;
+}
+
+.fa-solid {
+   color: #307c5b;
 }
