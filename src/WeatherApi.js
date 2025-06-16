@@ -9,16 +9,6 @@ const WeatherApi = () => {
    const [loading, setLoading] = useState(false) // Para controlar carga de datos
    const API_URL = process.env.REACT_APP_API_URL
 
-   // Función para obtener clima por coordenadas
-   const fetchWeatherByCoords = (lat, lon) => {
-      setLoading(true)
-      axios
-         .get(`${API_URL}/weather/coordinates`, { params: { lat, lon } })
-         .then((res) => setWeather(res.data))
-         .catch((err) => console.error("Error fetching weather:", err))
-         .finally(() => setLoading(false))
-   }
-
    // Función para obtener clima por ciudad
    const fetchWeatherByCity = (cityName) => {
       if (!cityName) return
@@ -34,6 +24,16 @@ const WeatherApi = () => {
    }
 
    useEffect(() => {
+      // Función para obtener clima por coordenadas
+      const fetchWeatherByCoords = (lat, lon) => {
+         setLoading(true)
+         axios
+            .get(`${API_URL}/weather/coordinates`, { params: { lat, lon } })
+            .then((res) => setWeather(res.data))
+            .catch((err) => console.error("Error fetching weather:", err))
+            .finally(() => setLoading(false))
+      }
+
       navigator.geolocation.getCurrentPosition(
          (pos) => {
             const { latitude, longitude } = pos.coords
